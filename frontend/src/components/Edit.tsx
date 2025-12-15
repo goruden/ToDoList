@@ -1,13 +1,5 @@
 import { useState } from "react";
-import { TodoService } from '../lib/api'
-
-interface ToDo {
-  id?: string
-  title: string
-  description: string
-  date: string
-  status: 'remaining' | 'completed'
-}
+import { TodoService, type ToDo } from '../api'
 
 interface Props {
     close: () => void;

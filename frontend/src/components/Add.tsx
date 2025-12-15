@@ -1,4 +1,4 @@
-import { TodoService } from '../lib/api'
+import { TodoService } from '../api'
 
 interface Props {
     close: () => void;

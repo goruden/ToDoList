@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react'
 import { TaskList, Add } from "@/components"
-import { TodoService } from './api'
+import { TodoService, type ToDo } from '@/api'
 
-interface ToDo {
-  id?: string
-  title: string
-  description: string
-  date: string
-  status: 'remaining' | 'completed'
-}
+// import { TodoService } from './api' //works with backend server example
+
+// interface ToDo {
+//   id?: string
+//   title: string
+//   description: string
+//   date: string
+//   status: 'remaining' | 'completed'
+// }
 
 const Manager = () => {
   const [filter, setFilter] = useState('all')
